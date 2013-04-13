@@ -1,0 +1,30 @@
+import thread
+import pygame
+import threading
+import ubervar
+from pygame.locals import *
+
+pygame.init()
+screen = pygame.display.set_mode((1024, 640))
+
+player_img = pygame.image.load('sprites/x.png').convert_alpha()
+
+player = player_img.get_rect()
+
+def load_player():
+        screen.blit(player, (100, 100, 100, 100))
+        pygame.display.update()#and show it all
+        pygame.time.delay(100)
+
+
+class mgame(threading.Thread):
+
+    def run(self):
+
+        while True:
+            
+            player=player.move(ubervar.player_left,ubervar.player_top)
+            screen.blit(player_img,player)#,(ubervar.player_left,ubervar.player_top,100,100))
+            pygame.display.update()
+            pygame.display.flip()
+            pygame.time.delay(100)

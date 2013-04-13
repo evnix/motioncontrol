@@ -1,0 +1,21 @@
+{
+  "mainFile": "start.py", 
+  "venv": "", 
+  "name": "motioncontrol", 
+  "license": "GNU General Public License v3", 
+  "url": "http://codologic.com", 
+  "pythonPath": "python", 
+  "programParams": "", 
+  "supported-extensions": [
+    ".py", 
+    ".html", 
+    ".jpg", 
+    ".png", 
+    ".ui", 
+    ".css", 
+    ".json", 
+    ".ini"
+  ], 
+  "project-type": "", 
+  "description": ""
+}
